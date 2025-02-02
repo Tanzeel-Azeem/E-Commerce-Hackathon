@@ -3,10 +3,10 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <div>
+    <div className='cursor-default'>
         
 
-        <div className='text-center bg-gray-100 py-2'>
+        <div className='text-center bg-gray-100 py-2 cursor-default'>
             <p className='text-lg'>Hello Nike App</p>
             <p className='text-gray-600'>Download the app to access everything Nike. <span className='text-black underline'>Get Your Great</span> </p>
         </div>

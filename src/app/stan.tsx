@@ -3,7 +3,7 @@ import React from 'react'
 
 const Stan = () => {
   return (
-    <div>
+    <div className='cursor-default'>
 
         <div className='mt-28 mb-7'>
           <span className='text-xl font-semibold px-10 lg:px-16'>{`Don't`} Miss</span>

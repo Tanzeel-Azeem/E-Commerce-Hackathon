@@ -3,7 +3,7 @@ import React from 'react'
 
 const Essentials = () => {
   return (
-    <div>
+    <div className='cursor-default'>
 
 
 <div className='mt-28 mb-12'>

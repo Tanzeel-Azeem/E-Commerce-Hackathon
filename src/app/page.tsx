@@ -1,4 +1,3 @@
-import Image from "next/image";
 
 import Hero from "./hero";
 import Card from "./card";
@@ -11,7 +10,6 @@ import Essentials from "./essentials";
 export default function Home() {
   return (
     <main className="max-w-screen-2xl mx-auto">
-
       <Hero/>
       <Card/>
       <Running/>

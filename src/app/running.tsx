@@ -5,7 +5,7 @@ import React from 'react'
 
 const Running = () => {
   return (
-    <div >
+    <div className='cursor-default'>
         <div className='mt-28 mb-12'>
         <span className='text-xl font-semibold px-10 lg:px-16'>Featured</span>
         </div>
