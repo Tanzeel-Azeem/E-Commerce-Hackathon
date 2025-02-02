@@ -38,6 +38,9 @@ const Card = () => {
         </div>
       </div>
 
+
+
+
       <div className="flex justify-evenly  px-10 lg:px-16 flex-wrap">
         {products.map((product) => {
           return (
