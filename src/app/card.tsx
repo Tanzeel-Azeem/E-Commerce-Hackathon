@@ -7,6 +7,7 @@ import { IProduct } from "../../types/products-types";
 import { client } from "@/sanity/lib/client";
 import { allProducts, fourProducts } from "@/sanity/lib/queries";
 import { urlFor } from "@/sanity/lib/image";
+import Link from "next/link";
 
 const Card = () => {
   const [products, setProducts] = useState<IProduct[]>([]);
@@ -45,6 +46,8 @@ const Card = () => {
         {products.map((product) => {
           return (
             <div className=" px-4 " key={product._id}>
+              <Link href={`/product/${product.slug.current}`} >
+              
               <div className="w-60 h-[350px] overflow-hidden">
                 {product.image && (
                   <Image
@@ -67,6 +70,8 @@ const Card = () => {
                   </div>
                 </div>
               </div>
+              
+              </Link>
             </div>
           );
         })}

@@ -7,6 +7,7 @@ import { IProduct } from "../../../types/products-types";
 import { allProducts } from "@/sanity/lib/queries";
 import { client } from "@/sanity/lib/client";
 import { urlFor } from "@/sanity/lib/image";
+import Link from "next/link";
 
 const Products = () => {
 
@@ -210,7 +211,8 @@ const Products = () => {
                     {products.map((product) => {
                         return <div className=" px-4 " key={product._id}>
 
-                            <div className="w-60 h-[350px] overflow-hidden">
+                           <Link href={`/product/${product.slug.current}`}>
+                                 <div className="w-60 h-[350px] overflow-hidden">
 
                                 {product.image &&
                                     <Image
@@ -230,6 +232,7 @@ const Products = () => {
                                 </div>
 
                             </div>
+                           </Link>
 
                         </div>
                     })}

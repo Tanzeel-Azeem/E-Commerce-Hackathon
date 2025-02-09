@@ -11,4 +11,8 @@ export interface IProduct {
     };
   };
   description: string;
+  slug : {
+    _type: "slug";
+    current: string;  
+  }
 }
